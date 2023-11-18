@@ -1,6 +1,7 @@
 """
 pip install numpy
 """
+import numpy as np
 
 """
 Python ro'yxati va NumPy massivi o'rtasidagi farq nima?
@@ -12,6 +13,9 @@ bir hil bo'lishi kerak. Agar massivlar bir hil bo'lmasa, massivlarda bajarilishi
 matematik operatsiyalar juda samarasiz bo'lar edi.
 
 """
+
+x = np.arange(4)  # np.arange(4) bu berilgan qiymat uzunligicha massiv yaratib beradi
+print(x)
 
 """
 
