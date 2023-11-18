@@ -4,7 +4,6 @@ sanalar ustida amallar bajarish uchun tayyor modul bo'lib uning nomi datetime.
 
 """
 import datetime
-import datetime
 
 """hozir vaqt ni olish """
 # x = datetime.datetime.now()
