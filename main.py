@@ -32,13 +32,16 @@ person = {
 }
 
 
+# basic write
 # with open("person.json", "w") as JsonFile:
 #     json.dump(person, JsonFile, indent=2)
 
-
-def write_json(data):
-    with open("person.json", "w") as JsonFile:
-        json.dump(data, JsonFile, indent=2)
-    return "file write data"
+# function write
+# def write_json(data):
+#     with open("person.json", "w") as JsonFile:
+#         json.dump(data, JsonFile, indent=2)
+#     return "file write data"
 
 # print(write_json(person))
+
+
