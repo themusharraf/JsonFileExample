@@ -5,7 +5,16 @@
 3.--> else Dastur kodida xato bo'lmaganda kodni bajarishga imkon beradi.
 4.--> finally Dastur kodida sinash natijasidan qat'i nazar, kodni bajarishga imkon beradi- va bloklardan tashqari.
 """
-try:
-  print(x)
-except:
-  print("Bu yerda x mavjud bo'lmasa")
+# try:
+#   print(x)
+# except:
+#   print("Bu yerda x mavjud bo'lmasa")
+
+
+# x = 4
+# try:
+#   print(x)
+# except NameError:
+#   print("x topilmadi")
+# except:
+#   print("boshqa bir xatolik")
