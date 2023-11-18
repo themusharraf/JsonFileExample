@@ -57,14 +57,11 @@ person = {
 
 def read_json(person):
     data = {}
-    key = []
-    value = []
+
     with open(f"./{person}.json", "r") as JsonFile:
         data = json.load(JsonFile)
-        for k, v in data.items():
-            key.append(k)
-            value.append(v)
-    return key,value
+        for x in data:
+            print(x)
 
 
 print(read_json("person"))
