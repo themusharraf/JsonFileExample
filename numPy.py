@@ -13,11 +13,9 @@ bir hil bo'lishi kerak. Agar massivlar bir hil bo'lmasa, massivlarda bajarilishi
 matematik operatsiyalar juda samarasiz bo'lar edi.
 
 """
-"""
-x = np.arange(4)  # np.arange(4) bu berilgan qiymat uzunligicha massiv yaratib beradi
-print(x)
 
-"""
+x = np.arange(4)  # np.arange(4) bu berilgan qiymat uzunligicha massiv yaratib beradi
+print(x)  # [0 1 2 3]
 
 """
 Va hatto bir xil intervalli intervallarni oz ichiga olgan massiv
@@ -33,7 +31,6 @@ Massivni qayta shakllantirish uchun reshape() dan foydalanishingiz mumkin.
 Masalan, siz ushbu massivni uchta qator va ikkita ustunli massivga o'zgartirishingiz mumkin:
 
 """
-import numpy as np
 
 a = np.arange(15).reshape(3, 5)  # 3x5 array
 print(a)
