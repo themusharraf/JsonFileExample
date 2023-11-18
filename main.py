@@ -31,12 +31,11 @@ person = {
     }
 }
 
-
-# basic write
+""" basic write """
 # with open("person.json", "w") as JsonFile:
 #     json.dump(person, JsonFile, indent=2)
 
-# function write
+""" function write """
 # def write_json(data):
 #     with open("person.json", "w") as JsonFile:
 #         json.dump(data, JsonFile, indent=2)
@@ -44,4 +43,28 @@ person = {
 
 # print(write_json(person))
 
+""" read basic"""
 
+
+# data = {}
+# with open("./person.json", "r") as JsonFile:
+#     data = json.load(JsonFile)
+
+# print(data)
+# for k, v in data.items():
+#     print(k, v)
+
+
+def read_json(person):
+    data = {}
+    key = []
+    value = []
+    with open(f"./{person}.json", "r") as JsonFile:
+        data = json.load(JsonFile)
+        for k, v in data.items():
+            key.append(k)
+            value.append(v)
+    return key,value
+
+
+print(read_json("person"))
