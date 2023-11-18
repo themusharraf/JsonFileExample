@@ -45,7 +45,6 @@ person = {
 
 """ read basic"""
 
-
 # data = {}
 # with open("./person.json", "r") as JsonFile:
 #     data = json.load(JsonFile)
@@ -54,14 +53,14 @@ person = {
 # for k, v in data.items():
 #     print(k, v)
 
-
-def read_json(person):
-    data = {}
-
-    with open(f"./{person}.json", "r") as JsonFile:
-        data = json.load(JsonFile)
-        for x in data:
-            print(x)
-
-
-print(read_json("person"))
+""" function read"""
+# def read_json(person):
+#     data = {}
+#
+#     with open(f"./{person}.json", "r") as JsonFile:
+#         data = json.load(JsonFile)
+#         for x in data:
+#             print(x)
+#
+#
+# print(read_json("person"))
