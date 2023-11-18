@@ -1,4 +1,3 @@
-
 """
 pip install numpy
 """
@@ -14,6 +13,14 @@ matematik operatsiyalar juda samarasiz bo'lar edi.
 
 """
 
+"""
+
+np.arange(15) bu berilgan qiymat uzunligicha massiv yaratib beradi
+Massivni qayta shakllantirish uchun reshape() dan foydalanishingiz mumkin.
+Masalan, siz ushbu massivni uchta qator va ikkita ustunli massivga o'zgartirishingiz mumkin:
+
+"""
 import numpy as np
-a = np.arange(15).reshape(3, 5)
+
+a = np.arange(15).reshape(3, 5)  # 3x5 array
 print(a)
