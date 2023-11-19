@@ -71,4 +71,20 @@ Elementlar ketma-ketligidan massiv yaratishdan tashqari, osongina 0's bilan to'l
 Yoki 's bilan to'ldirilgan massiv 1:
 
         np.ones(2)
-      
+
+🟢 Ma'lumotlar turini belgilash
+
+Standart ma'lumotlar turi suzuvchi nuqta ( np.float64) bo'lsa-da, siz dtypekalit so'z yordamida qaysi ma'lumotlar turini aniq belgilashingiz mumkin.
+
+        x = np.ones(2, dtype=np.int64)
+
+🟢Elementlarni qo'shish, o'chirish va saralash 
+Ushbu bo'lim o'z ichiga oladi np.sort() ,np.concatenate()
+
+Elementni saralash bilan oddiy np.sort(). Funktsiyani chaqirganda siz o'qni, turni va tartibni belgilashingiz mumkin.
+add array:
+        arr = np.array([2, 1, 5, 3, 7, 4, 6, 8])
+        
+Siz raqamlarni o'sish tartibida tezda saralashingiz mumkin:
+
+        np.sort(arr)
