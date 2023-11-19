@@ -1,4 +1,6 @@
 # Python #numpy
+Numpy docs uzbek tilida 
+Creator: Musharraf ibragimov
                   NumPy: yangi boshlanuvchilar uchun mutlaq asoslar
 🟢NumPy ( Raqamli Python ) ochiq manba Python kutubxonasi boʻlib, fan va muhandislikning deyarli barcha sohalarida qoʻllaniladi.
 Bu Python-da raqamli ma'lumotlar bilan ishlash uchun universal standart bo'lib, Python va PyData ilmiy ekotizimlarining asosini
