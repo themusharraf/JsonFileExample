@@ -35,3 +35,38 @@ haqida ma'lumotlar mavjud. Unda turli yo'llar bilan indekslanishi mumkin bo'lgan
 
 Massiv manfiy bo'lmagan butun sonlar majmuasi, mantiqiy, boshqa massiv yoki butun sonlar bilan indekslanishi mumkin. rankMassivning o'lchamlari soni .
 Massiv shapehar bir oʻlcham boʻyicha massivning oʻlchamini beruvchi butun sonlar majmuasidir.
+
+  Masalan:
+  
+    a = np.array([1, 2, 3, 4, 5, 6])
+    
+  yoki:
+
+    a = np.array([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]])
+
+🟢Massivning atributlari qanday?
+
+Massiv odatda bir xil turdagi va o'lchamdagi elementlarning qat'iy o'lchamli konteyneridir. Massivdagi o'lchamlar va elementlarning soni uning shakli bilan belgilanadi. 
+Massivning shakli har bir o'lchamning o'lchamlarini belgilaydigan manfiy bo'lmagan butun sonlar to'plamidir.
+
+🟢Asosiy massivni qanday yaratish kerak
+    Ushbu bo'lim:
+    
+    np.array() , np.zeros(), np.ones(), np.empty(), np.arange(), np.linspace(),dtype
+
+NumPy massivini yaratish uchun funksiyadan foydalanishingiz mumkin 
+
+    import numpy as np
+    a = np.array([1, 2, 3])
+
+🟢Siz massivingizni quyidagicha tasavvur qilishingiz mumkin:
+<img width="559" alt="image" src="https://github.com/themusharraf/Python/assets/122869450/a3f837d3-af9f-4738-bf42-cddc9af5783b">
+
+Elementlar ketma-ketligidan massiv yaratishdan tashqari, osongina 0's bilan to'ldirilgan massivni yaratishingiz mumkin:
+
+        np.zeros(2)
+        
+Yoki 's bilan to'ldirilgan massiv 1:
+
+        np.ones(2)
+      
