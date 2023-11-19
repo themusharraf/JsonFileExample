@@ -28,3 +28,10 @@ Nima uchun NumPy dan foydalanish kerak?
 
 🟢NumPy massivlari Python ro'yxatlariga qaraganda tezroq va ixchamroq. Massiv kamroq xotira sarflaydi va ulardan foydalanish qulay.
 NumPy ma'lumotlarni saqlash uchun kamroq xotiradan foydalanadi va u ma'lumotlar turlarini belgilash mexanizmini ta'minlaydi. Bu kodni yanada optimallashtirish imkonini beradi
+
+#Massiv nima? 
+Massiv NumPy kutubxonasining markaziy ma’lumotlar strukturasidir. Massiv qiymatlar to'plami bo'lib, unda xom ma'lumotlar, elementni qanday topish va elementni qanday izohlash
+haqida ma'lumotlar mavjud. Unda turli yo'llar bilan indekslanishi mumkin bo'lgan elementlar to'plami mavjud . Elementlarning barchasi bir xil turdagi, massiv deb ataladi dtype.
+
+Massiv manfiy bo'lmagan butun sonlar majmuasi, mantiqiy, boshqa massiv yoki butun sonlar bilan indekslanishi mumkin. rankMassivning o'lchamlari soni .
+Massiv shapehar bir oʻlcham boʻyicha massivning oʻlchamini beruvchi butun sonlar majmuasidir.
