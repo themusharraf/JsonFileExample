@@ -83,6 +83,7 @@ Ushbu bo'lim o'z ichiga oladi np.sort() ,np.concatenate()
 
 Elementni saralash bilan oddiy np.sort(). Funktsiyani chaqirganda siz o'qni, turni va tartibni belgilashingiz mumkin.
 add array:
+
         arr = np.array([2, 1, 5, 3, 7, 4, 6, 8])
         
 Siz raqamlarni o'sish tartibida tezda saralashingiz mumkin:
