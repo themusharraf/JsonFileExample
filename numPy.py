@@ -15,7 +15,7 @@ matematik operatsiyalar juda samarasiz bo'lar edi.
 """
 
 x = np.arange(4)  # np.arange(4) bu berilgan qiymat uzunligicha massiv yaratib beradi
-print(x)  # [0 1 2 3]
+# print(x)  # [0 1 2 3]
 
 """
 Va hatto bir xil intervalli intervallarni oz ichiga olgan massiv
@@ -23,7 +23,7 @@ Buni amalga oshirish uchun siz birinchi raqamni, oxirgi raqamni va qadam hajmini
 
 """
 s = np.arange(2, 9, 2)
-print(s)  # [2, 4, 6, 8]
+# print(s)  # [2, 4, 6, 8]
 
 """
 np.arange(15) bu berilgan qiymat uzunligicha massiv yaratib beradi
@@ -34,3 +34,5 @@ Masalan, siz ushbu massivni uchta qator va ikkita ustunli massivga o'zgartirishi
 
 a = np.arange(15).reshape(3, 5)  # 3x5 array
 print(a)
+print(a.itemsize)
+print(a.dtype)  # type of the array
