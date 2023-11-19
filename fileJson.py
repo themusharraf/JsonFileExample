@@ -31,6 +31,13 @@ person = {
     }
 }
 
+"""
+"r"- O'qish - Standart qiymat. Faylni o'qish uchun ochadi, agar fayl mavjud bo'lmasa, xato
+"a"- Qo'shish - faylni qo'shish uchun ochadi, agar u mavjud bo'lmasa, uni yaratadi
+"w"- Write - faylni yozish uchun ochadi, agar u mavjud bo'lmasa, uni yaratadi
+"x"- Yaratish - Belgilangan faylni yaratadi, agar fayl mavjud bo'lsa, xatoni qaytaradi
+"""
+
 """ basic write """
 # with open("person.json", "w") as JsonFile:
 #     json.dump(person, JsonFile, indent=2)
