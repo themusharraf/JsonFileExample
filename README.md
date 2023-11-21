@@ -1,5 +1,5 @@
 # Python #numpy
-# Numpy docs uzbek tilida 
+# Numpy basic uzbek tilida 
 # Creator: Musharraf ibragimov
                   NumPy: yangi boshlanuvchilar uchun mutlaq asoslar
 🟢NumPy ( Raqamli Python ) ochiq manba Python kutubxonasi boʻlib, fan va muhandislikning deyarli barcha sohalarida qoʻllaniladi.
@@ -89,3 +89,99 @@ add array:
 Siz raqamlarni o'sish tartibida tezda saralashingiz mumkin:
 
         np.sort(arr)
+
+Indekslash va kesish :
+Siz NumPy massivlarini xuddi Python roʻyxatlarini kesishingiz mumkin boʻlgan tarzda indekslashingiz va kesishingiz mumkin:
+
+        data = np.array([1, 2, 3])
+
+        data[1]
+        data[0:2]
+        data[1:]
+        data[-2:]
+<img width="586" alt="image" src="https://github.com/themusharraf/Python/assets/122869450/c0103c4a-fe5c-4558-88d3-0f5a0dd97f00">
+
+        a = np.array([[1 , 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]])
+        print(a[a < 5])
+        five_up = (a >= 5)
+        print(a[five_up])
+        juft = a[a%2==0]
+        c = a[(a > 2) & (a < 11)]
+Bundan tashqari, ikkita mavjud massivni vertikal va gorizontal ravishda joylashtirishingiz mumkin. Aytaylik, sizda ikkita massiv bor a1va a2:
+
+        a1 = np.array([[1, 1],
+               [2, 2]])
+
+        a2 = np.array([[3, 3],
+               [4, 4]])
+Siz ularni vertikal ravishda quyidagi bilan biriktirishingiz mumkin vstack:
+
+        s = np.vstack((a1, a2))
+        
+Yoki ularni gorizontal ravishda quyidagi bilan biriktiring hstack:
+
+        m = np.hstack((a1, a2))
+
+Agar siz massivni uchinchi va to'rtinchi ustundan keyin bo'lishni istasangiz, siz ishga tushirasiz:
+
+        data = np.arange(1, 25).reshape(2, 12)
+        
+Yana foydali massiv operatsiyalari :
+
+        data.max()
+        data.min()
+        data.sum()
+<img width="571" alt="image" src="https://github.com/themusharraf/Python/assets/122869450/3f39ddef-7611-4648-9337-fde1aa92e614">
+
+Agar siz ularga matritsaning o'lchamlarini tavsiflovchi kortejni bersangiz, 2D massivni yaratish uchun , ones()va zeros()dan ham foydalanishingiz mumkin :random()
+
+        s = np.ones((3, 2))
+        np.zeros((3, 2))
+        rng.random((3, 2)) 
+
+<img width="575" alt="image" src="https://github.com/themusharraf/Python/assets/122869450/e5a6694c-c5a8-4f9f-8cd6-638bee3bf1f7">
+
+Tasodifiy raqamlarni yaratish:
+yordamida Generator.integerssiz pastdan (numPy bilan birga ekanligini unutmang) yuqoridan (eksklyuziv) tasodifiy butun sonlarni
+yaratishingiz mumkin. Siz endpoint=Trueyuqori raqamni qamrab oladigan qilib sozlashingiz mumkin.
+
+Siz 0 dan 4 gacha bo'lgan 2 x 4 tasodifiy butun sonlarni yaratishingiz mumkin:
+
+        rng.integers(5, size=(2, 4)) 
+
+
+Noyob narsalar va hisoblarni qanday olish mumkin 
+Ushbu bo'lim qamrab oladi np.unique()
+Massivdagi noyob elementlarni yordamida osongina topishingiz mumkin np.unique.
+Masalan, agar siz ushbu massivdan boshlasangiz:
+
+      a = np.array([11, 11, 12, 13, 14, 15, 16, 17, 12, 13, 11, 14, 18, 19, 20])
+      unique_values = np.unique(a)
+      print(unique_values)
+NumPy massividagi noyob qiymatlar indekslarini (massivdagi noyob qiymatlarning birinchi indeks pozitsiyalari massivi) olish uchun argumentni return_index massiv np.unique()bilan bir qatorda kiriting:
+
+      unique_values, indices_list = np.unique(a, return_index=True)
+      print(indices_list)
+
+Matritsani ko'chirish va shaklini o'zgartirish 
+Ushbu bo'lim arr.reshape() , arr.transpose(),arr.T
+
+Matritsalaringizni ko'chirish odatiy holdir. TNumPy massivlari matritsani transpozitsiya qilish imkonini beruvchi xususiyatga ega :
+<img width="543" alt="image" src="https://github.com/themusharraf/Python/assets/122869450/b37255e2-cceb-4f9d-b5aa-187ed9905479">
+
+
+Bundan tashqari, matritsaning o'lchamlarini o'zgartirishingiz kerak bo'lishi mumkin. Bu, masalan, sizda ma'lumotlar to'plamidan farqli
+bo'lgan ma'lum bir kirish shaklini kutadigan model mavjud bo'lganda sodir bo'lishi mumkin. Bu reshapeusul foydali bo'lishi mumkin. Siz shunchaki matritsa uchun kerakli yangi o'lchamlarga o'tishingiz kerak.
+     
+      data = np.arange(6)
+      data.reshape(2, 3)
+      data.reshape(3, 2)
+      
+<img width="590" alt="image" src="https://github.com/themusharraf/Python/assets/122869450/e9b1d403-4d58-4be5-8b8a-52dffe0fdb64">
+
+bilan massivni ko'chirishingiz mumkin arr.transpose().
+
+      data.transpose()
+
+
+
